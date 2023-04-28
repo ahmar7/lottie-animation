@@ -13,66 +13,66 @@ $(document).ready(function () {
 });
  
 // **********************************************
-var select = function (s) {
-    return document.querySelector(s);
-  },
-  selectAll = function (s) {
-    return document.querySelectorAll(s);
-  },
-  animationWindow = select("#lottie"),
-  animData = {
-    wrapper: animationWindow,
-    animType: "canvas",
-    loop: false,
-    prerender: true,
-    autoplay: true,
-    path: "../animation/BB_Revision_Visible.json",
-   
-  },
-  anim;
-
-anim = bodymovin.loadAnimation(animData);
-anim.addEventListener("DOMLoaded", onDOMLoaded);
-anim.setSpeed(0.9);
-
-function onDOMLoaded(e) {
-  anim.addEventListener("complete", function () {
-    let preloaders = (document.getElementById("lottie").style.display = "none");
-    let bodySelect = document.querySelector("body");
-      bodySelect.style.overflow = "auto";
-  });
-}
-
-// ScrubBodymovinTimeline(anim);
-// **********************************************
-// var selects = function (s) {
+// var select = function (s) {
 //     return document.querySelector(s);
 //   },
-//   selectAlls = function (s) {
+//   selectAll = function (s) {
 //     return document.querySelectorAll(s);
 //   },
-//   animationWindows = selects("#lottiembl"),
-//   animDatas = {
-//     wrapper: animationWindows,
+//   animationWindow = select("#lottie"),
+//   animData = {
+//     wrapper: animationWindow,
 //     animType: "canvas",
 //     loop: false,
 //     prerender: true,
 //     autoplay: true,
-//     path: "../animation/lottie_animations_2.json",
+//     path: "../animation/BB_Revision_Visible.json",
    
 //   },
-//   anims;
+//   anim;
 
-// anims = bodymovin.loadAnimation(animDatas);
-// anims.addEventListener("DOMLoaded", onDOMLoadeds);
-// anims.setSpeed(1);
+// anim = bodymovin.loadAnimation(animData);
+// anim.addEventListener("DOMLoaded", onDOMLoaded);
+// anim.setSpeed(0.9);
 
-// function onDOMLoadeds(e) {
-//   anims.addEventListener("complete", function () {
-//     let preloaders = (document.getElementById("lottiembl").style.display =  "none");
+// function onDOMLoaded(e) {
+//   anim.addEventListener("complete", function () {
+//     let preloaders = (document.getElementById("lottie").style.display = "none");
 //     let bodySelect = document.querySelector("body");
 //       bodySelect.style.overflow = "auto";
 //   });
 // }
+
+// ScrubBodymovinTimeline(anim);
+// **********************************************
+var selects = function (s) {
+    return document.querySelector(s);
+  },
+  selectAlls = function (s) {
+    return document.querySelectorAll(s);
+  },
+  animationWindows = selects("#lottiembl"),
+  animDatas = {
+    wrapper: animationWindows,
+    animType: "canvas",
+    loop: false,
+    prerender: true,
+    autoplay: true,
+    path: "../animation/lottie_animations_2.json",
+   
+  },
+  anims;
+
+anims = bodymovin.loadAnimation(animDatas);
+anims.addEventListener("DOMLoaded", onDOMLoadeds);
+anims.setSpeed(1);
+
+function onDOMLoadeds(e) {
+  anims.addEventListener("complete", function () {
+    let preloaders = (document.getElementById("lottiembl").style.display =  "none");
+    let bodySelect = document.querySelector("body");
+      bodySelect.style.overflow = "auto";
+  });
+}
 
 // ScrubBodymovinTimeline(anims);
