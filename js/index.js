@@ -65,14 +65,7 @@ var select = function (s) {
     prerender: true,
     autoplay: true,
     path: "../animation/BB_Revision_Visible.json",
-    rendererSettings: {
-
-      //context: canvasContext, // the canvas context
-      //scaleMode: 'noScale',
-      //clearCanvas: false,
-      //progressiveLoad: false, // Boolean, only svg renderer, loads dom elements when needed. Might speed up initialization for large number of elements.
-      //hideOnTransparent: true //Boolean, only svg renderer, hides elements when opacity reaches 0 (defaults to true)
-    },
+   
   },
   anim;
 
@@ -88,7 +81,7 @@ function onDOMLoaded(e) {
   });
 }
 
-ScrubBodymovinTimeline(anim);
+// ScrubBodymovinTimeline(anim);
 // **********************************************
 var selects = function (s) {
     return document.querySelector(s);
@@ -104,24 +97,17 @@ var selects = function (s) {
     prerender: true,
     autoplay: true,
     path: "../animation/lottie_animations_2.json",
-    rendererSettings: {
-      //context: canvasContext, // the canvas context
-      //scaleMode: 'noScale',
-      //clearCanvas: false,
-      //progressiveLoad: false, // Boolean, only svg renderer, loads dom elements when needed. Might speed up initialization for large number of elements.
-      //hideOnTransparent: true //Boolean, only svg renderer, hides elements when opacity reaches 0 (defaults to true)
-    },
+   
   },
   anims;
 
 anims = bodymovin.loadAnimation(animDatas);
-anims.addEventListener("DOMLoadeds", onDOMLoaded);
+anims.addEventListener("DOMLoaded", onDOMLoadeds);
 anims.setSpeed(1);
 
 function onDOMLoadeds(e) {
-  anims.addEventListener("completes", function () {
-    let preloaders = (document.getElementById("lottiembl").style.display =
-      "none");
+  anims.addEventListener("complete", function () {
+    let preloaders = (document.getElementById("lottiembl").style.display =  "none");
     let bodySelect = document.querySelector("body");
       bodySelect.style.overflow = "auto";
   });
