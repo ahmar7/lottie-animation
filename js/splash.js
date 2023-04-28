@@ -1,23 +1,21 @@
-var animationContainer = document.getElementById('animation-container');	
+var animationContainer = document.getElementById('lottie');	
 
 var animation = bodymovin.loadAnimation({
-	container: document.getElementById('animation-container'),
-	path: 'assets/splashScreen.json',
-	renderer: 'svg',
+	container: animationContainer,
+	path: '../animation/BB_Revision_Visible.json',
+	renderer: 'canvas',
 	loop: false,
 	autoplay: true,
 	name: 'demo-animation',
-	rendererSettings: {
-    preserveAspectRatio: 'xMidYMid slice'//burasi "meet" den 'slice' a dondurulcek eger genislitme gerekirse
-	}
+	 
 	
 });
-// animation.setSpeed(0.75);
+animation.setSpeed(1);
 
 animation.addEventListener('complete', function() 
 {
 		// Fade out the splash screen and fade in the main content
-		document.getElementById('splash-container').classList.add('hidden');
+		document.getElementById('lottie').style.display="none";
 		document.getElementById('main-container').style.opacity = 1;
 		animationContainer.parentNode.removeChild(animationContainer);
 	

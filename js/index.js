@@ -33,7 +33,7 @@ var select = function (s) {
 
 anim = bodymovin.loadAnimation(animData);
 anim.addEventListener("DOMLoaded", onDOMLoaded);
-anim.setSpeed(1);
+anim.setSpeed(0.9);
 
 function onDOMLoaded(e) {
   anim.addEventListener("complete", function () {
@@ -65,7 +65,7 @@ var selects = function (s) {
 
 anims = bodymovin.loadAnimation(animDatas);
 anims.addEventListener("DOMLoaded", onDOMLoadeds);
-anims.setSpeed(1);
+anims.setSpeed(0.75);
 
 function onDOMLoadeds(e) {
   anims.addEventListener("complete", function () {
@@ -75,4 +75,4 @@ function onDOMLoadeds(e) {
   });
 }
 
-ScrubBodymovinTimeline(anims);
+// ScrubBodymovinTimeline(anims);
