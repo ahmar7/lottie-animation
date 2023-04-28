@@ -13,35 +13,35 @@ $(document).ready(function () {
 });
  
 // **********************************************
-// var select = function (s) {
-//     return document.querySelector(s);
-//   },
-//   selectAll = function (s) {
-//     return document.querySelectorAll(s);
-//   },
-//   animationWindow = select("#lottie"),
-//   animData = {
-//     wrapper: animationWindow,
-//     animType: "canvas",
-//     loop: false,
-//     prerender: true,
-//     autoplay: true,
-//     path: "../animation/BB_Revision_Visible.json",
+var select = function (s) {
+    return document.querySelector(s);
+  },
+  selectAll = function (s) {
+    return document.querySelectorAll(s);
+  },
+  animationWindow = select("#lottie"),
+  animData = {
+    wrapper: animationWindow,
+    animType: "canvas",
+    loop: false,
+    prerender: true,
+    autoplay: true,
+    path: "../animation/BB_Revision_Visible.json",
    
-//   },
-//   anim;
+  },
+  anim;
 
-// anim = bodymovin.loadAnimation(animData);
-// anim.addEventListener("DOMLoaded", onDOMLoaded);
-// anim.setSpeed(0.9);
+anim = bodymovin.loadAnimation(animData);
+anim.addEventListener("DOMLoaded", onDOMLoaded);
+anim.setSpeed(0.9);
 
-// function onDOMLoaded(e) {
-//   anim.addEventListener("complete", function () {
-//     let preloaders = (document.getElementById("lottie").style.display = "none");
-//     let bodySelect = document.querySelector("body");
-//       bodySelect.style.overflow = "auto";
-//   });
-// }
+function onDOMLoaded(e) {
+  anim.addEventListener("complete", function () {
+    let preloaders = (document.getElementById("lottie").style.display = "none");
+    let bodySelect = document.querySelector("body");
+      bodySelect.style.overflow = "auto";
+  });
+}
 
 // ScrubBodymovinTimeline(anim);
 // **********************************************
