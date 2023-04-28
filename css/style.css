@@ -38,14 +38,7 @@ body {
   /* position: absolute;
      z-index: -999999999999999; */
 }
-@keyframes mymove {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
+
 #lottie,
 #lottiembl {
   position: fixed;
@@ -61,6 +54,14 @@ body {
 }
 .preloadermbl {
   display: none;
+}
+@keyframes mymove {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 /* header */
 #header {
