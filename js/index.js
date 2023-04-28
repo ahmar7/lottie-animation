@@ -11,45 +11,7 @@ $(document).ready(function () {
     //   }
   });
 });
-// let splashScreen = () => {
-//   let preloader = document.getElementById("preloaderdesk");
-//   let bodySelect = document.querySelector("body");
-//   bodySelect.style.overflow = "auto";
-//   preloader.classList.add("fading-splash");
-// };
-// let splashScreenmbl = () => {
-//   let preloader = document.getElementById("preloadermbl");
-//   let bodySelect = document.querySelector("body");
-//   preloader.classList.add("fading-splash");
-//   bodySelect.style.overflow = "auto";
-// };
-// var animation = bodymovin.loadAnimation({
-//   container: document.getElementById("lottie"),
-//   path: "../animation/BB_Revision_Visible.json",
-//   renderer: "canvas",
-//   loop: false,
-//   autoplay: true,
-// });
-// var animation = bodymovin.loadAnimation({
-//   container: document.getElementById("lottiembl"),
-//   path: "../animation/lottie_animations_2.json",
-//   renderer: "canvas",
-//   loop: false,
-//   autoplay: true,
-// });
-// setTimeout(() => {
-//   splashScreen();
-//   splashScreenmbl();
-//   setTimeout(() => {
-//     let preloader = document.getElementById("preloaderdesk");
-//     let preloadermbl = document.getElementById("preloadermbl");
-//     let preloaders = (document.getElementById("lottie").style.display = "none");
-//     let preloadermbls = (document.getElementById("lottiembl").style.display =
-//       "none");
-//     preloader.style.display = "none";
-//     preloadermbl.style.display = "none";
-//   }, 500);
-// }, 3500);
+ 
 // **********************************************
 var select = function (s) {
     return document.querySelector(s);
@@ -62,7 +24,7 @@ var select = function (s) {
     wrapper: animationWindow,
     animType: "canvas",
     loop: false,
-    prerender: true,
+    prerender: false,
     autoplay: true,
     path: "../animation/BB_Revision_Visible.json",
    
