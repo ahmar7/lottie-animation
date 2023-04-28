@@ -33,17 +33,34 @@ body {
   height: 100%;
 }
 /*Preloader */
-#lottie{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: 0 auto;
-    height: 100vh;
-    width: 100%;
-    background-color: #000;
-    z-index: 999999;
+.fading-splash {
+  animation: mymove 0.3s forwards linear;
+  /* position: absolute;
+     z-index: -999999999999999; */
+}
+@keyframes mymove {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+#lottie,
+#lottiembl {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  height: 100vh;
+  width: 100%;
+  background-color: #000;
+  z-index: 999999;
+}
+.preloadermbl {
+  display: none;
 }
 /* header */
 #header {
@@ -159,8 +176,8 @@ input[type="file"] {
 
   padding-right: 36px;
 }
-.no-b::before{
-    display: none !important;
+.no-b::before {
+  display: none !important;
 }
 .cv-bx {
   position: relative;
@@ -223,7 +240,7 @@ input[type="file"] {
   border-radius: 10px;
   opacity: 0.87;
   border: none !important;
-  outline:  none;
+  outline: none;
   font-size: 14px;
   padding: 10px;
 }
@@ -537,7 +554,13 @@ footer .social-media-box a img:hover {
 /* career */
 
 /* media */
-@media only screen and (min-width: 991px) {
+@media (max-width: 1200px) {
+  .preloaderdesk {
+    display: none !important;
+  }
+  .preloadermbl {
+    display: block !important;
+  }
 }
 @media only screen and (max-width: 1200px) and (min-width: 768px) {
   .dir-col .col-lg-4 {
