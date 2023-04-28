@@ -41,8 +41,8 @@ setTimeout(() => {
   splashScreen();
   splashScreenmbl();
   setTimeout(() => {
-    let preloader = document.getElementById("preloaderdesk");
-    let preloadermbl = document.getElementById("preloadermbl");
+    let preloader = document.getElementById("lottie");
+    let preloadermbl = document.getElementById("lottiembl");
     preloader.style.display = "none";
     preloadermbl.style.display = "none";
   }, 500);
