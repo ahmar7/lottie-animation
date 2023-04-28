@@ -26,14 +26,14 @@ let splashScreenmbl = () => {
 var animation = bodymovin.loadAnimation({
   container: document.getElementById("lottie"), 
   path: "../animation/BB_Revision_Visible.json", 
-  renderer: "svg", 
+  renderer: "canvas", 
   loop: true, 
   autoplay: true, 
 });
 var animation = bodymovin.loadAnimation({
   container: document.getElementById("lottiembl"), 
   path: "../animation/lottie_animations_2.json", 
-  renderer: "svg", 
+  renderer: "canvas", 
   loop: false, 
   autoplay: true, 
 });
