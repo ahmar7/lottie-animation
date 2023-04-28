@@ -1,124 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Visible</title>
-</head>
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="assets/fonts/BungeeInline-Regular.ttf">
-<link rel="stylesheet" href="css/style.css">
+  </head>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/fonts/BungeeInline-Regular.ttf" />
+  <link rel="stylesheet" href="css/style.css" />
 
-<body>
+  <body style="overflow: hidden">
+    <div class="preloaderdesk" id="preloaderdesk">
+      <div id="lottie"></div>
+    </div>
+    <div class="preloadermbl" id="preloadermbl">
+      <div id="lottiembl"></div>
+    </div>
     <section id="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-4">
-                    <a class="logo" href="index.html">
-                        <img src="images/logo.svg" alt="">
-                    </a>
-                </div>
-                <div class="col-8">
-                    <div class="menu-pc">
-                        <a href="#">Download Now</a>
-                    </div>
-                    <nav class="navbar fixed-top">
-                        <div class="container-fluid">
-                            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
-                                aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                                aria-labelledby="offcanvasNavbarLabel">
-                                <div class="offcanvas-header">
-                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="offcanvas-body">
-                                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                        <li class="nav-item">
-                                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Privacy Policy</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Terms and Conditions</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Cookie Policy</a>
-                                        </li>
-                                    </ul>
-                                    <form class="d-flex mt-3" role="search">
-                                        <input class="form-control me-2" type="search" placeholder="Search"
-                                            aria-label="Search">
-                                        <button class="btn btn-outline-success" type="submit">Search</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </nav>
-
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <a class="logo" href="index.html">
+              <img src="images/logo.svg" alt="" />
+            </a>
+          </div>
+          <div class="col-8">
+            <div class="menu-pc">
+              <a href="#">Download Now</a>
             </div>
+            <nav class="navbar fixed-top">
+              <div class="container-fluid">
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasNavbar"
+                  aria-controls="offcanvasNavbar"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                  class="offcanvas offcanvas-end"
+                  tabindex="-1"
+                  id="offcanvasNavbar"
+                  aria-labelledby="offcanvasNavbarLabel"
+                >
+                  <div class="offcanvas-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"
+                          >Home</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Privacy Policy</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Terms and Conditions</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Cookie Policy</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                      <input
+                        class="form-control me-2"
+                        type="search"
+                        placeholder="Search"
+                        aria-label="Search"
+                      />
+                      <button class="btn btn-outline-success" type="submit"
+                        >Search</button
+                      >
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
         </div>
+      </div>
     </section>
     <section id="main">
-        <div class="container">
-            <div class="row dir-col">
-                <h1 class="title-visible">Career Portal</h1>
-                <div class="col-lg-4 col-md-6">
-                    <div class="career-portal">
-                        <a href="flutter-developer-remote.html">
-                            <div class="content-career">
-                                <div class="up">Flutter Developer</div>
-                                <div class="down">
-                                    <div class="button">APPLY</div>
-                                    <div class="details">
-                                        <p>Job Type</p>
-                                        <p>Part Time</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+      <div class="container">
+        <div class="row dir-col">
+          <h1 class="title-visible">Career Portal</h1>
+          <div class="col-lg-4 col-md-6">
+            <div class="career-portal">
+              <a href="flutter-developer-remote.html">
+                <div class="content-career">
+                  <div class="up">Flutter Developer</div>
+                  <div class="down">
+                    <div class="button">APPLY</div>
+                    <div class="details">
+                      <p>Job Type</p>
+                      <p>Part Time</p>
                     </div>
+                  </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="career-portal">
-                        <a href="brand-ambassador.html">
-                            <div class="content-career">
-                                <div class="up">Brand Ambassador</div>
-                                <div class="down">
-                                    <div class="button">APPLY</div>
-                                    <div class="details">
-                                        <p>Job Type</p>
-                                        <p>Part Time</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="career-portal">
+              <a href="brand-ambassador.html">
+                <div class="content-career">
+                  <div class="up">Brand Ambassador</div>
+                  <div class="down">
+                    <div class="button">APPLY</div>
+                    <div class="details">
+                      <p>Job Type</p>
+                      <p>Part Time</p>
                     </div>
+                  </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="career-portal">
-                        <a href="flutter-developer.html">
-                            <div class="content-career">
-                                <div class="up">Flutter Internship(Remote)</div>
-                                <div class="down">
-                                    <div class="button">APPLY</div>
-                                    <div class="details">
-                                        <p>Job Type</p>
-                                        <p>Part Time</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="career-portal">
+              <a href="flutter-developer.html">
+                <div class="content-career">
+                  <div class="up">Flutter Internship(Remote)</div>
+                  <div class="down">
+                    <div class="button">APPLY</div>
+                    <div class="details">
+                      <p>Job Type</p>
+                      <p>Part Time</p>
                     </div>
+                  </div>
                 </div>
-                <!-- <div class="col-lg-4 col-md-6">
+              </a>
+            </div>
+          </div>
+          <!-- <div class="col-lg-4 col-md-6">
                     <div class="career-portal">
                         <a href="flutter-developer.html">
                             <div class="content-career">
@@ -166,39 +191,40 @@
                         </a>
                     </div>
                 </div> -->
-            </div>
         </div>
+      </div>
     </section>
 
- 
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-6">
-                    <div class="privacy-box">
-                        <p class="title">Legal</p>
-                        <a href="privacy-policy.html">Privacy</a>
-                        <a href="#">Terms</a>
-                        <a href="#">Cookie Policy</a>
-                        <a href="contact.html">Contact Us</a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-6">
-                    <div class="privacy-box">
-                        <p class="title">Careers</p>
-                        <a href="careers-portal.html">Careers Portal</a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-6">
-                    <div class="social-media-box">
-                        <p class="title">Socials</p>
-                        <!-- <a href="#"> <img src="images/facebook-32.png" alt=""> </a> -->
-                        <a href="#"> <img src="images/insta.svg" alt=""> </a>
-                        <a href="#"> <img src="images/tiktok.svg" alt=""> </a>
-                        <a href="https://www.linkedin.com/company/visibleappco"> <img src="images/linkedin.svg" alt=""> </a>
-                    </div>
-                </div>
-                <!-- <div class="col-lg-3 col-6">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-6">
+            <div class="privacy-box">
+              <p class="title">Legal</p>
+              <a href="privacy-policy.html">Privacy</a>
+              <a href="#">Terms</a>
+              <a href="#">Cookie Policy</a>
+              <a href="contact.html">Contact Us</a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6">
+            <div class="privacy-box">
+              <p class="title">Careers</p>
+              <a href="careers-portal.html">Careers Portal</a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6">
+            <div class="social-media-box">
+              <p class="title">Socials</p>
+              <!-- <a href="#"> <img src="images/facebook-32.png" alt=""> </a> -->
+              <a href="#"> <img src="images/insta.svg" alt="" /> </a>
+              <a href="#"> <img src="images/tiktok.svg" alt="" /> </a>
+              <a href="https://www.linkedin.com/company/visibleappco">
+                <img src="images/linkedin.svg" alt="" />
+              </a>
+            </div>
+          </div>
+          <!-- <div class="col-lg-3 col-6">
                     <div class="privacy-box">
                         <p class="title">FAQ</p>
                         <a href="#">Destinations</a>
@@ -207,14 +233,20 @@
                         <a href="#">Promo Code</a>
                     </div>
                 </div> -->
-            </div>
-            <div class="privacy-contract">© 2023 Visible. All rights reserved. </div>
         </div>
+        <div class="privacy-contract"
+          >© 2023 Visible. All rights reserved.
+        </div>
+      </div>
     </footer>
-</body>
-
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/index.js"></script>
-
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.11.0/lottie.min.js"
+    integrity="sha512-XCthc/WzPfa+oa49Z3TI6MUK/zlqd67KwyRL9/R19z6uMqBNuv8iEnJ8FWHUFAjC6srr8w3FMZA91Tfn60T/9Q=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/index.js"></script>
 </html>

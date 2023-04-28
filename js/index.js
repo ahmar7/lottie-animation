@@ -24,7 +24,7 @@ var select = function (s) {
     wrapper: animationWindow,
     animType: "canvas",
     loop: false,
-    prerender: false,
+    prerender: true,
     autoplay: true,
     path: "../animation/BB_Revision_Visible.json",
    
