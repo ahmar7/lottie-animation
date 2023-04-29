@@ -19,6 +19,9 @@ body {
 .check-us-out-button {
   display: none;
 }
+#preloadermbl{
+  opacity: 0 !important;
+}
 #main {
   position: relative;
 }
