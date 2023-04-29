@@ -70,7 +70,7 @@ anims.setSpeed(1);
 function onDOMLoadeds(e) {
   anims.addEventListener("complete", function () {
     let preloaders = (document.getElementById("lottiembl").style.display =  "none");
-  document.getElementById("prelot").style.display = "none";
+  
     let bodySelect = document.querySelector("body");
       bodySelect.style.overflow = "auto";
   });
