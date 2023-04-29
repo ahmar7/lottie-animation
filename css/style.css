@@ -579,7 +579,8 @@ footer .social-media-box a img:hover {
     text-align: left;
   }
   #main .main-box {
-    font-size: 20px;
+    font-size: 27px;
+    width: inherit;
   }
 
   .fixed-top {
@@ -624,7 +625,8 @@ footer .social-media-box a img:hover {
     display: inherit !important;
   }
   #main .main-box {
-    font-size: 18px;
+       width: inherit;
+    font-size: 22px
   }
   #main .main-bg-content img {
     width: 100%;
