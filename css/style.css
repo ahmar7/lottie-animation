@@ -618,6 +618,12 @@ footer .social-media-box a img:hover {
   display: none;
 }
 @media only screen and (max-width: 768px) {
+  footer p.title{
+    font-size: 16px !important;
+  }
+  footer .privacy-box a{
+    font-size: 14px;
+  }
   .desk-only{
     display: none;
   }
