@@ -23,7 +23,7 @@ var select = function (s) {
   animData = {
     wrapper: animationWindow,
     animType: "canvas",
-    loop: false,
+    loop: true,
     prerender: true,
     autoplay: true,
     path: "../animation/BB_Revision_Visible.json",
@@ -54,8 +54,8 @@ var selects = function (s) {
   animationWindows = selects("#lottiembl"),
   animDatas = {
     wrapper: animationWindows,
-    animType: "canvas",
-    loop: false,
+    animType: "svg",
+    loop: true,
     prerender: true,
     autoplay: true,
     path: "../animation/lottie_animations_2.json",
@@ -75,4 +75,4 @@ function onDOMLoadeds(e) {
   });
 }
 
-// ScrubBodymovinTimeline(anims);
+ScrubBodymovinTimeline(anims);
