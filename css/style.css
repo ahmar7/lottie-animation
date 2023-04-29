@@ -92,6 +92,10 @@ body {
 #header .navbar.fixed-top {
   position: absolute;
 }
+#header .container .col-4{
+  display: flex;
+  text-align: left;
+}
 
 #header .menu-pc a {
   color: #fff;
