@@ -22,7 +22,7 @@ var select = function (s) {
   animationWindow = select("#lottie"),
   animData = {
     wrapper: animationWindow,
-    animType: "canvas",
+    animType: "svg",
     loop: true,
     prerender: true,
     autoplay: true,
