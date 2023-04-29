@@ -163,8 +163,12 @@ body {
   top: 50%;
 }
 
+.all-job-detail p.no-bt {
+  font-size: 18px;
+}
 .all-job-detail p {
   color: #fff;
+  font-size: 15px;
 }
 .no-bt {
   margin-bottom: 0 !important;
@@ -681,6 +685,9 @@ footer .social-media-box a img:hover {
 
 /* Apple kullanıyorsa App Store'a yönlendirir */
 @media only screen and (max-width: 768px) {
+  #preloadermbl{
+    display: none !important;
+  }
   .check-us-out-button[href="#"]::before {
     content: "App Store";
   }
@@ -698,5 +705,31 @@ footer .social-media-box a img:hover {
     content: "Google Play";
   }
 }
+@media (max-width:600px) {
+  .all-job-detail p.no-bt{
+    font-size: 17px;
+  }
+  .all-job-detail p{
+    font-size: 15px;
+  }
+  .title-visible{
+    font-size: 24px;
+  }
+  #header .logo img {
+    position: right;
+    height: 70px;
+    width: 140px;
+}
+.no-bt{
+  margin-bottom: 10px !important;
 
+}
+.menu-pc{
+  margin-top: 9px;
+}
+#header .menu-pc a{
+  font-size: 15px;
+}
+  
+}
 /* media */
