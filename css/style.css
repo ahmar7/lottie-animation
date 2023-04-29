@@ -710,10 +710,10 @@ footer .social-media-box a img:hover {
   }
 }
 @media (max-width:600px) {
-  .privacy-policy-main h2,
-  .privacy-policy-main h3{
-    font-size: 22px !important;
+  .pp-title{
+    font-size: 20px !important;
   }
+  .pp-tit-2{font-size: 22px !important;}
   .all-job-detail p.no-bt{
     font-size: 17px;
   }
@@ -726,11 +726,14 @@ footer .social-media-box a img:hover {
   #header .logo img {
     position: right;
     height: 70px;
-    width: 140px;
+    width: 150px;
 }
 .no-bt{
   margin-bottom: 10px !important;
 
+}
+.privacy-policy-main p{
+  font-size: 14px;
 }
 .menu-pc{
   margin-top: 9px;
