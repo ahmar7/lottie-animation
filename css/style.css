@@ -117,6 +117,11 @@ body {
   background: #fff;
   display: none;
 }
+.navbar.fixed-top
+
+{
+  display: none !important;
+}
 
 /* header */
 
@@ -603,19 +608,27 @@ footer .social-media-box a img:hover {
   .wrapper {
     display: block;
   }
-
+/* 
   #header .menu-pc {
     display: none;
-  }
+  } */
 }
-
+.mbl-only{
+  display: none;
+}
 @media only screen and (max-width: 768px) {
+  .desk-only{
+    display: none;
+  }
+  .mbl-only{
+    display: inherit !important;
+  }
   #main .main-box {
     font-size: 18px;
   }
   #main .main-bg-content img {
-    width: 100vh;
-    height: 550px;
+    width: 100%;
+    height:auto;
   }
 }
 
