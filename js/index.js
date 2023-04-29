@@ -22,8 +22,8 @@ var select = function (s) {
   animationWindow = select("#lottie"),
   animData = {
     wrapper: animationWindow,
-    animType: "svg",
-    loop: true,
+    animType: "canvas",
+    loop: false,
     prerender: true,
     autoplay: true,
     path: "../animation/BB_Revision_Visible.json",
@@ -54,8 +54,8 @@ var selects = function (s) {
   animationWindows = selects("#lottiembl"),
   animDatas = {
     wrapper: animationWindows,
-    animType: "svg",
-    loop: true,
+    animType: "canvas",
+    loop: false,
     prerender: true,
     autoplay: true,
     path: "../animation/lottie_animations_2.json",
