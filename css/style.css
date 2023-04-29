@@ -55,6 +55,9 @@ body {
 .preloadermbl {
   display: none;
 }
+#lottiembl svg{
+  background-color: #000;
+}
 @keyframes mymove {
   from {
     opacity: 1;
