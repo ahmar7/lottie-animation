@@ -706,6 +706,10 @@ footer .social-media-box a img:hover {
   }
 }
 @media (max-width:600px) {
+  .privacy-policy-main h2,
+  .privacy-policy-main h3{
+    font-size: 22px !important;
+  }
   .all-job-detail p.no-bt{
     font-size: 17px;
   }
@@ -713,7 +717,7 @@ footer .social-media-box a img:hover {
     font-size: 15px;
   }
   .title-visible{
-    font-size: 24px;
+    font-size: 22px;
   }
   #header .logo img {
     position: right;
